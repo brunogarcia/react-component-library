@@ -12,3 +12,17 @@ Storybook is a tool for UI development.
 npm run storybook
 ```
 
+## Unit testing
+
+Unit testing with Jest and React Testing Library
+
+```bash
+npm run test
+```
+
+Watch mode
+
+```bash
+npm run test -- --watch
+```
+
