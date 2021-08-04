@@ -4,7 +4,7 @@
   "description": "The newline Guide to Building a Company Component Library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "format": "prettier --write .",
@@ -34,6 +34,9 @@
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/react": "^6.3.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^26.0.24",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@types/styled-components": "^5.1.11",
@@ -45,7 +48,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
     "prettier": "^2.3.2",
+    "ts-jest": "^26.5.6",
     "typescript": "4.2.2"
   },
   "dependencies": {
