@@ -18,5 +18,5 @@ export const Default: Story = ({ placeholder }) => {
 };
 
 Default.args = {
-  placeholder: 'The placeholder example',
+  placeholder: 'Placeholder example',
 };
