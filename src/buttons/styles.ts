@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 import { transparentize } from 'polished';
 
-import { ButtonProps } from "./Button";
+import { ButtonProps } from './Button';
 import {
   DISABLED_OPACITY,
   SECONDARY_TEXT_COLOR,
@@ -9,17 +9,17 @@ import {
   PRIMARY_TEXT_COLOR,
   PRIMARY_COLOR,
   DANGER_COLOR,
-  DANGER_TEXT_COLOR
+  DANGER_TEXT_COLOR,
 } from '../utils/styles';
 
 const colorStyles = (p: ButtonProps) => {
   let color = SECONDARY_TEXT_COLOR;
   let backgroundColor = SECONDARY_COLOR;
 
-  if (p.variant === "primary") {
+  if (p.variant === 'primary') {
     color = PRIMARY_TEXT_COLOR;
     backgroundColor = PRIMARY_COLOR;
-  } else if (p.variant === "danger") {
+  } else if (p.variant === 'danger') {
     color = DANGER_TEXT_COLOR;
     backgroundColor = DANGER_COLOR;
   }
@@ -55,29 +55,29 @@ export const StyledButton = styled.button<ButtonProps>`
     cursor: inherit;
     opacity: ${DISABLED_OPACITY};
   }
-  
-  width: ${(p) => p.isFullWidth && "100%"};
 
-  display: ${(p) => (p.isFullWidth ? "block" : "inline-block")};
+  width: ${(p) => p.isFullWidth && '100%'};
+
+  display: ${(p) => (p.isFullWidth ? 'block' : 'inline-block')};
 
   padding: ${(p) => {
-    if (p.size === "large") {
-      return "0.5rem 1rem";
-    } else if (p.size === "small") {
-      return "0.25rem 0.5rem";
+    if (p.size === 'large') {
+      return '0.5rem 1rem';
+    } else if (p.size === 'small') {
+      return '0.25rem 0.5rem';
     }
 
-    return "0.4rem 0.75rem";
+    return '0.4rem 0.75rem';
   }};
 
   font-size: ${(p) => {
-    if (p.size === "large") {
-      return "1.25rem";
-    } else if (p.size === "small") {
-      return "0.875rem";
+    if (p.size === 'large') {
+      return '1.25rem';
+    } else if (p.size === 'small') {
+      return '0.875rem';
     }
 
-    return "1rem";
+    return '1rem';
   }};
 
   ${colorStyles}

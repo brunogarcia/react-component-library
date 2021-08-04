@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { StyledButton } from './styles';
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
-  variant?: "secondary" | "primary" | "danger";
-  size?: "small" | "medium" | "large";
+  variant?: 'secondary' | 'primary' | 'danger';
+  size?: 'small' | 'medium' | 'large';
   isFullWidth?: boolean;
 }
 
@@ -33,8 +33,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  variant: "secondary",
-  size: "medium",
+  variant: 'secondary',
+  size: 'medium',
   isFullWidth: false,
 };
 

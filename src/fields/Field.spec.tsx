@@ -12,7 +12,7 @@ describe('Field', () => {
           <Field.Label>Label</Field.Label>
         </Field>
       );
-    
+
       expect(screen.getByText('Label')).toHaveAttribute('for', 'unique-id');
     });
   });
@@ -25,11 +25,11 @@ describe('Field', () => {
           <Field.Input />
         </Field>
       );
-  
+
       expect(screen.getByLabelText('Input')).toHaveAttribute('id', 'unique-id');
     });
   });
-  
+
   describe('TextArea', () => {
     it('applies unique ID to id attribute', () => {
       render(
@@ -38,7 +38,7 @@ describe('Field', () => {
           <Field.Textarea />
         </Field>
       );
-  
+
       expect(screen.getByLabelText('Textarea')).toHaveAttribute(
         'id',
         'unique-id'
