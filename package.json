@@ -1,5 +1,5 @@
 {
-  "name": "react-component-library",
+  "name": "@brunogarcia/react-component-library",
   "version": "1.0.0",
   "description": "The newline Guide to Building a Company Component Library",
   "main": "dist/index.cjs.js",
